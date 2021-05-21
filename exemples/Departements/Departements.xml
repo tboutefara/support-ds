@@ -1,0 +1,28 @@
+<departements>
+	<departement id="1">
+		<nom>Informatique</nom>
+		<masters>
+			<master num="1" intitule="SIAD">
+				<module>ED</module>
+				<module>BDA</module>
+			</master>
+			<master num="2" intitule="RS">
+				<module>Protocoles</module>
+				<module>Sécurité</module>
+			</master>
+		</masters>
+	</departement>
+	<departement id="2">
+		<nom>Math</nom>
+		<masters>
+			<master num="3" intitule="Statistiques">
+				<module>Stats</module>
+				<module>Méthodes Numériques</module>
+			</master>
+			<master num="4" intitule="Mathématiques Appliquées">
+				<module>Analyse</module>
+				<module>Algèbre</module>
+			</master>
+		</masters>
+	</departement>
+</departements>

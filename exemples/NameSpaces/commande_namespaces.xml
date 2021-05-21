@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<commande xmlns="http://www.univ-jijel.dz/commandes/"
+	xmlns:l="http://www.univ-jijel.dz/livres/"
+	xmlns:c="http://www.univ-jijel.dz/clients/">
+	<c:client>
+		<c:code>1226</c:code>
+		<c:nom>Benmohammed Mohammed</c:nom>
+		<c:adresse>Jijel</c:adresse>
+	</c:client>
+	<livres>
+		<l:livre>
+			<l:titre>Java</l:titre>
+			<l:auteurs>
+				<l:auteur>
+					<l:nom>Jamie Chan</l:nom>
+					<l:nationnalite>américaine</l:nationnalite>
+				</l:auteur>
+			</l:auteurs>
+			<l:prix>11.99</l:prix>
+		</l:livre>
+	</livres>
+</commande>	
