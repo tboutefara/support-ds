@@ -1,0 +1,15 @@
+<!DOCTYPE recette [
+
+<!ELEMENT recette (titre,ingredients,directions)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT ingredients (ingredient+)>
+<!ELEMENT ingredient (#PCDATA)>
+<!ELEMENT directions (step+)>
+<!ELEMENT step (#PCDATA)>
+
+<!ATTLIST recette id CDATA #REQUIRED>
+<!ATTLIST ingredient qte CDATA #REQUIRED>
+<!ATTLIST ingredient unite CDATA #IMPLIED>
+<!ATTLIST step n CDATA #REQUIRED>
+
+]>

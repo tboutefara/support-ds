@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<livre>
+	<titre>Java</titre>
+	<auteurs>
+		<auteur>
+			<nom>Jamie Chan</nom>
+			<nationnalite>américaine</nationnalite>
+		</auteur>
+	</auteurs>
+	<prix>11.99</prix>
+</livre>
