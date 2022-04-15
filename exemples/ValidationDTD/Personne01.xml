@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<!DOCTYPE personne SYSTEM "personne.dtd">
+<personne><nom>Benamor</nom><prenom>Amor</prenom><contacts><tel>034000000</tel><mobile>0660000000</mobile></contacts></personne>
