@@ -1,0 +1,23 @@
+Plan 2021/2022
+---------------
+
+12 H du Cours
+-------------
+
+
+
+12 Heures de TP
+----------------
+
+Exemple d'un document basé sur les balises : HTML (connaissances déjà acquises),
+Un premier document XML : Première tentative de modélisation et d'écriture d'un document XML,
+Parser un document XML : DOM
+Parser un document XML : JDOM
+Parser un document XML : SAX
+Mapping XML/Objets : JAX-B
+JSON : Un premier un exemple en JavaScript
+JSON : Java API for JSON
+JSON : Jackson
+JSON : Exemple Applciation PHP
+--> Ajouter les autres outils DTD, XSLT
+BaseX

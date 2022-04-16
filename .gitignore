@@ -1,1 +1,7 @@
 /Ressources
+/TD/ExempleJAXB/nbproject/private/
+/TD/ExempleJAXB/build/
+
+*.class
+/exemples/ValidationXMLSchema/nbproject/private/
+/exemples/ValidationXMLSchema/build/

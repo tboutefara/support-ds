@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>TODO</title>
+<meta name="generator" content="Geany 1.36" />
+<style>
+	
+	input, button {
+		width : 300px;
+		margin : 5px;
+	}
+	
+</style>
+</head>
+
+<body>
+<h1>Liste de tâches</h1>
+<ul id="liste">
+</ul>
+<br/><br/>
+<input id="tache" /><br/>
+<button id="ajouter">Ajouter</button>
+<script src="script.js"></script>
+<script>
+var numero = 0;
+
+document.getElementById("ajouter").onclick = function(){
+	numero++;
+	var tache = document.getElementById("tache").value;
+	ajouter("liste", tache, numero);
+};
+
+</script>
+</body>
+
+</html>
