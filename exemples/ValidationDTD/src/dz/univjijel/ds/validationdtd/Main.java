@@ -1,7 +1,19 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Copyright (C) 2022 Tarek Boutefara <t_boutefara@esi.dz>
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 package dz.univjijel.ds.validationdtd;
 
@@ -14,12 +26,14 @@ import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 
 /**
- *
+ * Exemple sur la validation d'un fichier XML en utilisant un fichier DTD.
  * @author Tarek Boutefara <t_boutefara@esi.dz>
  */
 public class Main {
 
     /**
+     * Pad de paramètres,
+     * Les noms des fichiers sont "hard-coded" pour cette première version.
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -43,6 +57,11 @@ public class Main {
     
 }
 
+/**
+ * Le validateur implémente les méthodes nécessaires pour recevoir les différentes
+ * exceptions (erreurs).
+ * @author Tarek Boutefara <t_boutefara@esi.dz>
+ */
 class ExempleValidateur implements ErrorHandler {
 
     @Override
