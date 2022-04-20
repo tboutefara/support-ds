@@ -5,3 +5,5 @@
 *.class
 /exemples/ValidationXMLSchema/nbproject/private/
 /exemples/ValidationXMLSchema/build/
+/exemples/ValidationDTD/nbproject/private/
+/exemples/ValidationDTD/build/

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dz.univjijel.validationxmlschema;
+package dz.univjijel.ds.validationxmlschema;
 
 import java.io.File;
 import javax.xml.parsers.SAXParser;

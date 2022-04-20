@@ -1,9 +1,27 @@
-import org.w3c.dom.*;
-import org.xml.sax.*;
-import javax.xml.parsers.*;
-import java.io.*;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package dz.univjijel.ds.validationdtd;
 
-public class ExempleValidation {
+import java.io.File;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import org.w3c.dom.Document;
+import org.xml.sax.ErrorHandler;
+import org.xml.sax.SAXException;
+import org.xml.sax.SAXParseException;
+
+/**
+ *
+ * @author Tarek Boutefara <t_boutefara@esi.dz>
+ */
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         dbf.setValidating(true);
@@ -21,8 +39,8 @@ public class ExempleValidation {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
+    
 }
 
 class ExempleValidateur implements ErrorHandler {
