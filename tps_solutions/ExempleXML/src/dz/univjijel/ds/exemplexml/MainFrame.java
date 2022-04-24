@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dz.univjijel.ds.creerxml;
+package dz.univjijel.ds.exemplexml;
 
 import javax.swing.JOptionPane;
 
@@ -16,8 +16,9 @@ public class MainFrame extends javax.swing.JFrame {
     /**
      * Creates new form MainFrame
      */
-    public MainFrame() {
+    public MainFrame(Configuration c) {
         initComponents();
+        miseAJour(c);
     }
 
     /**
@@ -160,6 +161,18 @@ public class MainFrame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Sauvegardé avec succès", "Succès", JOptionPane.INFORMATION_MESSAGE);
         }else{
             JOptionPane.showMessageDialog(this, "Erreur lors de la sauvegarde", "Erreur", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+    
+     private void miseAJour(Configuration c) {
+        if(c == null){
+            JOptionPane.showMessageDialog(this, "Erreur lors de la lecture du fichier", "Erreur", JOptionPane.ERROR_MESSAGE);
+        }else{
+            txtUrl.setText(c.getUrl());
+            txtUser.setText(c.getUser());
+            txtPassword.setText(c.getPassword());
+            
+            txtPort.setText(c.getPort());
         }
     }
 }

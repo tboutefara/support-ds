@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dz.univjijel.ds.creerxml;
+package dz.univjijel.ds.lirexml;
 
 import javax.swing.JOptionPane;
 
@@ -16,8 +16,9 @@ public class MainFrame extends javax.swing.JFrame {
     /**
      * Creates new form MainFrame
      */
-    public MainFrame() {
+    public MainFrame(Configuration c) {
         initComponents();
+        miseAJour(c);
     }
 
     /**
@@ -39,7 +40,6 @@ public class MainFrame extends javax.swing.JFrame {
         lblServer = new javax.swing.JLabel();
         lblPort = new javax.swing.JLabel();
         txtPort = new javax.swing.JTextField();
-        btnSauvegarder = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Créer XML");
@@ -58,13 +58,6 @@ public class MainFrame extends javax.swing.JFrame {
         lblServer.setText("Serveur");
 
         lblPort.setText("Port :");
-
-        btnSauvegarder.setText("Sauvegarder");
-        btnSauvegarder.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSauvegarderActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -92,10 +85,6 @@ public class MainFrame extends javax.swing.JFrame {
                             .addComponent(txtPassword)
                             .addComponent(txtPort, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE))))
                 .addContainerGap(74, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnSauvegarder, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -121,20 +110,13 @@ public class MainFrame extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblPort))
                     .addComponent(txtPort, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
-                .addComponent(btnSauvegarder)
-                .addGap(40, 40, 40))
+                .addContainerGap(106, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnSauvegarderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSauvegarderActionPerformed
-        sauvegarder();
-    }//GEN-LAST:event_btnSauvegarderActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnSauvegarder;
     private javax.swing.JLabel lblBdd;
     private javax.swing.JLabel lblPassword;
     private javax.swing.JLabel lblPort;
@@ -147,19 +129,15 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables
 
-    private void sauvegarder() {
-        
-        Configuration c = new Configuration(
-                                txtUrl.getText(),
-                                txtUser.getText(),
-                                txtPassword.getText(),
-                                txtPort.getText()
-                            );
-        
-        if(GestionnaireXML.creerXML(c)){
-            JOptionPane.showMessageDialog(this, "Sauvegardé avec succès", "Succès", JOptionPane.INFORMATION_MESSAGE);
+    private void miseAJour(Configuration c) {
+        if(c == null){
+            JOptionPane.showMessageDialog(this, "Erreur lors de la lecture du fichier", "Erreur", JOptionPane.ERROR_MESSAGE);
         }else{
-            JOptionPane.showMessageDialog(this, "Erreur lors de la sauvegarde", "Erreur", JOptionPane.ERROR_MESSAGE);
+            txtUrl.setText(c.getUrl());
+            txtUser.setText(c.getUser());
+            txtPassword.setText(c.getPassword());
+            
+            txtPort.setText(c.getPort());
         }
     }
 }
