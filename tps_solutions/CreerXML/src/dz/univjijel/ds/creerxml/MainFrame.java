@@ -1,20 +1,23 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Université de Jijel
+ * Faculté des sciences exactes et d'informatique
+ * Département d'Informatique
+ * 3ème Année Licence
+ * Données Semi-Structurées - Corrigé de TP 03
  */
 package dz.univjijel.ds.creerxml;
 
 import javax.swing.JOptionPane;
 
 /**
- *
+ * La fenêtre principale.
+ * Son rôle est de permettre la saisie des informations à stcker dans le fichier.
  * @author Tarek Boutefara <t_boutefara@esi.dz>
  */
 public class MainFrame extends javax.swing.JFrame {
 
     /**
-     * Creates new form MainFrame
+     * Crée une nouvelle MainFrame
      */
     public MainFrame() {
         initComponents();
@@ -147,6 +150,9 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Envoie les données vers le gestionnaire pour créer le fichier.
+     */
     private void sauvegarder() {
         
         Configuration c = new Configuration(

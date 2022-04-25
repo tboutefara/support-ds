@@ -1,20 +1,24 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Université de Jijel
+ * Faculté des sciences exactes et d'informatique
+ * Département d'Informatique
+ * 3ème Année Licence
+ * Données Semi-Structurées - Corrigé de TP 03
  */
 package dz.univjijel.ds.lirexml;
 
 import javax.swing.JOptionPane;
 
 /**
- *
+ * La fenêtre principale.
+ * Son rôle est de permettre l'affichage des informations contenues dans le fichier.
  * @author Tarek Boutefara <t_boutefara@esi.dz>
  */
 public class MainFrame extends javax.swing.JFrame {
 
     /**
-     * Creates new form MainFrame
+     * Crée une nouvelle MainFrame
+     * @param c L'objet qui contient les informations à afficher.
      */
     public MainFrame(Configuration c) {
         initComponents();
@@ -42,7 +46,7 @@ public class MainFrame extends javax.swing.JFrame {
         txtPort = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Créer XML");
+        setTitle("Lire XML");
         setResizable(false);
 
         lblBdd.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -129,6 +133,10 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Cette méthode met à jour l'affichage seln le contenu de l'objet Configuration.
+     * @param c L'objet qui contient les informations à afficher.
+     */
     private void miseAJour(Configuration c) {
         if(c == null){
             JOptionPane.showMessageDialog(this, "Erreur lors de la lecture du fichier", "Erreur", JOptionPane.ERROR_MESSAGE);

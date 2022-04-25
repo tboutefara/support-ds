@@ -1,7 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Université de Jijel
+ * Faculté des sciences exactes et d'informatique
+ * Département d'Informatique
+ * 3ème Année Licence
+ * Données Semi-Structurées - Corrigé de TP 03
  */
 package dz.univjijel.ds.exemplexml;
 
@@ -22,11 +24,20 @@ import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
 
 /**
- *
+ * Cette classe contient les méthodes qui interagissent avec le fichier XML.
+ * Mettre ces méthodes dans une classe séparée permet une meilleure maintenance 
+ * du code.
  * @author Tarek Boutefara <t_boutefara@esi.dz>
  */
 public class GestionnaireXML {
 
+    /**
+     * Cette méthode crée un fichier XML.
+     * Les balises sont remplies à partir des données contenues dans l'objet
+     * configuration.
+     * @param configuration Le contenu à mettre dans le fichier
+     * @return Vrai si le fichier est créé avec succès, Faux autrement.
+     */
     public static boolean creerXML(Configuration configuration) {
         
         boolean ok = true;

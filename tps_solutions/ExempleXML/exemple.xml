@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><configuration><bdd><url>jdbc:mysql://exemple</url><user>tarek</user><password>tarekpassword</password></bdd><server><port>1500</port></server></configuration>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><configuratin><bdd><url>jdbc:mysql://localhost/exemple</url><user>root</user><password>rootpassword</password></bdd><server><port>8888</port></server></configuratin>

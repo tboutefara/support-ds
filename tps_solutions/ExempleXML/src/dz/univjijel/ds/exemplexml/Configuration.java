@@ -1,25 +1,51 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Université de Jijel
+ * Faculté des sciences exactes et d'informatique
+ * Département d'Informatique
+ * 3ème Année Licence
+ * Données Semi-Structurées - Corrigé de TP 03
  */
 package dz.univjijel.ds.exemplexml;
 
 /**
- *
+ * Cette classe sert à encapsuler les données (le modèle) de cet exemple.
+ * Ces données sont : l'URL, l'utilisateur, le mot de passe et le port. Ces données
+ * vont assurer l'échange entre de l'interface et l'utilitaire XML.
  * @author Tarek Boutefara <t_boutefara@esi.dz>
  */
 public class Configuration {
     
+    /**
+     * Contenu de la balise &lt;url&gt;
+     */
     String url;
+    /**
+     * Contenu de la balise &lt;user&gt;
+     */
     String user;
+    /**
+     * Contenu de la balise &lt;password&gt;
+     */
     String password;
     
+    /**
+     * Contenu de la balise &lt;port&gt;
+     */
     String port;
 
+    /**
+     * Constructeur vide.
+     */
     public Configuration() {
     }
 
+    /**
+     * Constructeur avec paramètres.
+     * @param url L'URL
+     * @param user L'utilisateur
+     * @param password Le mot de passe
+     * @param port Le port
+     */
     public Configuration(String url, String user, String password, String port) {
         this.url = url;
         this.user = user;
