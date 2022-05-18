@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<departements>
+    <departement>
+        <nom>Informatique</nom>
+        <masters>
+            <master id="1">
+                <code>SIAD</code>
+                <titre>Systèmes d'Information d'Aide à la Décision</titre>
+            </master>
+            <master id="2">
+                <code>RetS</code>
+                <titre>Réseaux et Sécurité</titre>
+            </master>
+        </masters>
+    </departement>
+    <departement>
+        <nom>Mathématiques</nom>
+        <masters>
+            <master id="1">
+                <code>MA</code>
+                <titre>Mathématiques Appliquées</titre>
+            </master>
+            <master id="2">
+                <code>Stat</code>
+                <titre>Statistiques</titre>
+            </master>
+        </masters>
+    </departement>
+</departements>

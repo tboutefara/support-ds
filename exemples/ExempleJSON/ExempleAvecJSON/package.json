@@ -1,0 +1,16 @@
+{
+    "name": "ClientJSON",
+    "version": "1.0.0",
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+    ],
+    "author": "Tarek Boutefara <t_boutefara@esi.dz>",
+    "contributors": [],
+    "dependencies": {
+        "jquery": "^3.6.0"
+    }
+}

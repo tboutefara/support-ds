@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<sites xmlns:xlink="http://www.w3.org/1999/xlink">
+    <site id="1"
+        xlink:type="simple"
+        xlink:href="www.mesrs.dz"
+    >
+        <title>Site officie du MESRS</title>
+        <auteur>Direction des Moyens Informatiques - MESRS</auteur>
+    </site>
+    <site id="2"
+        xlink:type="simple"
+        xlink:href="www.univ-jijel.dz"
+    >
+        <title>Site officiel de l'Université de Jijel</title>
+        <auteur>Université de Jijel</auteur>
+    </site>
+</sites>

@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"dz.univjijel.ds.exemplexml","l":"Configuration"},{"p":"dz.univjijel.ds.exemplexml","l":"GestionnaireXML"},{"p":"dz.univjijel.ds.exemplexml","l":"Main"},{"p":"dz.univjijel.ds.exemplexml","l":"MainFrame"}]

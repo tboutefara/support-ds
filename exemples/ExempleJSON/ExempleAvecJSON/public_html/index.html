@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+Université de Jijel
+Faculté des Sciences Exactes et d'Informatique
+Département d'Informatique
+3ème Année Licence - Informatique
+Données Semi-structurées (DS)
+Exemple : Exemple avec JSON
+-->
+<html>
+    <head>
+        <title>Client JSON</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../node_modules/jquery/dist/jquery.js" type="text/javascript"></script>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id = "contenu">
+            <h3>Liste des Employés</h3>
+            <ul id="liste"></ul>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function () {
+
+
+            $.getJSON('employes.php', function (donnees) {
+                
+                // Si la réponse est une chaîne à parser on appelle la fonctin JSON.parse
+                // Dans notre cas, nous avons directement JSOON
+                // var donnees = JSON.parse(donneesJSON);
+                
+                donnees.forEach(function(employe){
+                    var li = document.createElement("li");
+                    li.innerHTML = employe.nom + "  " + employe.prenom;
+                    document.getElementById("liste").appendChild(li);
+                })
+            });
+
+
+        });
+    </script>
+</html>
