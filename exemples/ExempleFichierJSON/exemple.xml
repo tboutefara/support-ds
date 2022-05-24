@@ -1,0 +1,17 @@
+<employes>
+	<employe code="1">
+		<nom>Benameur</nom>
+		<prenom>Ameur</prenom>
+		<adresse>Jijel</adresse>
+	</employe>
+	<employe code="1">
+		<nom>Benomar</nom>
+		<prenom>Omar</prenom>
+		<adresse>Tahir</adresse>
+	</employe>
+	<employe code="1">
+		<nom>Benhmed</nom>
+		<prenom>Ahmed</prenom>
+		<adresse>Milia</adresse>
+	</employe>
+</employes>

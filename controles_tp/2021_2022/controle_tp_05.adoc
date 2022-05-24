@@ -1,0 +1,14 @@
+*Université de Jijel* +
+*Faculté des Sciences Exactes et d'Informatique* +
+*Département d'Informatique*
+
+== Données Semi-Structurées : Controle TP (05)
+
+*Enoncé*
+
+L'objectif de ce TP est de créer un outil qui permet la rédaction d'article.
+Un article contient un titre, un auteur, un résumé, et un contenu. Le contenu se
+compose de plusieurs paragraphes.
+
+image:Captures/Capture_CTP05_01.PNG[width=300]
+image:Captures/Capture_CTP05_02.PNG[width=300]

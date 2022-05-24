@@ -1,0 +1,24 @@
+{
+	"employes": {
+		"employe": [
+			{
+				"nom": "Benameur",
+				"prenom": "Ameur",
+				"adresse": "Jijel",
+				"_code": "1"
+			},
+			{
+				"nom": "Benomar",
+				"prenom": "Omar",
+				"adresse": "Tahir",
+				"_code": "1"
+			},
+			{
+				"nom": "Benhmed",
+				"prenom": "Ahmed",
+				"adresse": "Milia",
+				"_code": "1"
+			}
+		]
+	}
+}
