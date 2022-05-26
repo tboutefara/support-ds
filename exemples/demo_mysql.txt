@@ -1,0 +1,14 @@
+Create database BaseSimple;
+use BaseSimple;
+source base_simple.sql;
+
+mysql -u root -p -D BaseSimple" -e "Select * from Personne" --xml
+
+==========================================================
+
+Create Database ExempleXML;
+use ExempleXML;
+source demo_mysql.sql;
+
+Select ExtractValue (contenu, '//produit[@id = "1"]/prix') from ExempleXML;
+Select UpdateXML(contenu, '//produit[@id = "1"]/prix', '<prix>40</prix>') from ExempleXML;
