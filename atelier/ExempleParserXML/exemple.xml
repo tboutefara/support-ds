@@ -1,0 +1,22 @@
+<bibliotheque>
+	<livre>
+		<id>1</id>
+		<titre>Java 2</titre>
+		<dpublication>2023</dpublication>
+	</livre>
+	<livre>
+		<id>2</id>
+		<titre>MySQL</titre>
+		<dpublication>2020</dpublication>
+	</livre>
+	<livre>
+		<id>3</id>
+		<titre>Python for Data science</titre>
+		<dpublication>2022</dpublication>
+	</livre>
+	<livre>
+		<id>4</id>
+		<titre>Python</titre>
+		<dpublication>2001</dpublication>
+	</livre>
+</bibliotheque>

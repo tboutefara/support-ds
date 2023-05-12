@@ -1,0 +1,27 @@
+/* 
+    Created on : 9 mai 2023, 01:44:46
+    Author     : Tarek Boutefara <t_boutefara@esi.dz>
+*/
+#contenu {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+#buttons {
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border: black solid 2px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+started 11:54
+finished 12:35
+-->
+<html>
+    <head>
+        <title>Gestion des Etudiants</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script src="script.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="contenu">
+            <div id="formualire">
+                <label for="code">Code : </label><input type="text" id="code" /><br/>
+                <label for="nom">Nom : </label><input type="text" id="nom" /><br/>
+                <label for="prenom">Prénom : </label><input type="text" id="prenom" /><br/>
+                <label for="email">Adresse E-mail : </label><input type="text" id="email" /><br/>
+            </div>
+            <div id="buttons">
+                <button onclick="ajouter();">Ajouter</button>
+                <button onclick="sauvegarder();">Modifier</button>
+            </div>
+            <div id="tableau">
+                <table id="donnees">
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
